@@ -53,6 +53,7 @@ let computer = "paper";
 
 switch (playerone) {
     case computer:
+        
         console.log("thetin game");
         break;
     case "rock":
@@ -92,9 +93,26 @@ console.log(` My test grade is a ${myGrade} . `)
 
 // User input 
 
-alert("Hello!")
-let bollen = confirm("cleic OK if you waant read my page \n click cancel if you waant leave my page !")
-console.log(bollen)
+// alert("Hello!")
+// let bollen = confirm("cleic OK if you waant read my page \n click cancel if you waant leave my page !")
+// console.log(bollen)
 
-bollen = prompt("Please enter your name.")
-console.log(bollen.trim())
+// bollen = prompt("Please enter your name.")
+// console.log(bollen.trim())
+
+
+// Loop
+let TheNumber = 0 ;
+while(TheNumber < 5) {
+    console.log(TheNumber);
+    TheNumber++ ;
+}
+
+do{ 
+    console.log("do while");
+}while(TheNumber<5);
+
+
+for(let i = 0 ; "youssef".length > i ; i++){
+    console.log(HostName.charAt(i));
+}

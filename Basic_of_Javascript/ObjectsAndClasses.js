@@ -11,7 +11,7 @@ const firstObject = {
 
 
 var Father = {
-    firstName: "Saad",
+    firstName:"Saad",
     familyNeme: "Alleyahi",
     age: 60,
     gender: "man",
@@ -53,9 +53,18 @@ const {firstName:myName , age } = fourthSon;
 
 console.log(myName);
 console.log(age)
+//Json 
+
+const sendJson = JSON.stringify(Father);
+console.log(Father);
+console.log(sendJson);
+console.log(typeof sendJson);
+
+const receiveJson = JSON.parse(sendJson); 
+console.log(receiveJson);
+console.log(typeof receiveJson);
 
 //Classes 
-
 class Pizza{
     #crust = "original";
     #toppings = [];

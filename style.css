@@ -1,0 +1,14 @@
+section{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: gainsboro;
+
+}
+div{
+    background-color:black;
+    text-align: center;
+    color: whitesmoke;
+    margin: 5%;
+    padding: 12%;
+    padding-bottom: 20%;
+}

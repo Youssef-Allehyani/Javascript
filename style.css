@@ -1,14 +1,43 @@
-section{ 
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    background-color: gainsboro;
-
-}
+section{}
 div{
-    background-color:black;
     text-align: center;
     color: whitesmoke;
     margin: 5%;
     padding: 12%;
     padding-bottom: 20%;
+}
+
+.view1{
+
+}
+.black{
+    background-color: black;
+}
+#view2{ 
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr); */
+    padding: 50px;
+
+}
+.view{
+
+} 
+
+.darkblue{
+    background-color: darkblue;
+}
+main{
+    background-color: gray;
+    padding: 50px;
+}
+
+.purple{
+    background: purple;
+}
+.height100{
+    height: 100px;
+}
+nav{
+    color : white ;
+    background-color: black;
 }

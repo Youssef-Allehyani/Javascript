@@ -1,4 +1,6 @@
-section{}
+/* section{
+
+} */
 div{
     text-align: center;
     color: whitesmoke;
@@ -7,9 +9,9 @@ div{
     padding-bottom: 20%;
 }
 
-.view1{
+/* .view1{
 
-}
+} */
 .black{
     background-color: black;
 }
@@ -19,9 +21,9 @@ div{
     padding: 50px;
 
 }
-.view{
+/* .view{
 
-} 
+}  */
 
 .darkblue{
     background-color: darkblue;

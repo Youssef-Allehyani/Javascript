@@ -28,3 +28,16 @@ console.log(ArraySession)
 console.log(ArraySession2)
 console.log(key)
 console.log(localStorage.length)
+
+// Modules 
+
+import  {play , gool ,winer} from "./ObjectsAndClasses.js";
+import  {SpecialtyPizza} from "./ObjectsAndClasses.js";
+
+const SpecialPizza = new SpecialtyPizza("medium","vegetable pizza");
+SpecialPizza.slice();
+
+
+console.log(play());
+console.log(gool());
+console.log(winer());

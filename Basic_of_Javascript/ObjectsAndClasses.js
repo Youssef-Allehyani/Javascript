@@ -65,7 +65,7 @@ console.log(receiveJson);
 console.log(typeof receiveJson);
 
 //Classes 
-class Pizza{
+export class Pizza{
     #crust = "original";
     #toppings = [];
     constructor(pizzaSize ,pizzaType){
@@ -90,7 +90,7 @@ class Pizza{
     }
 }
 
-class SpecialtyPizza extends Pizza{
+ export class SpecialtyPizza extends Pizza{
     constructor(pizzaSize ,pizzaType){
         super(pizzaSize,pizzaType);
         this.cheese =  "lot of cheese"
@@ -101,6 +101,8 @@ class SpecialtyPizza extends Pizza{
     }
 }
 
+
+
 const SpecialPizza = new SpecialtyPizza("medium","vegetable pizza");
 SpecialPizza.slice();
 
@@ -109,3 +111,17 @@ myPizza.setToppings(["paper","olives"]);
 console.log(myPizza.getcrust());
 myPizza.setcrust("Thin")
 myPizza.bakeIt();
+
+//modules
+
+export   function play(){
+    return"Start to play ."
+}
+
+export const gool =()=>{
+   return"gooooooool"
+}
+
+export const winer =()=>{
+    return("you win !")
+}

@@ -121,11 +121,34 @@ myPromise.then(value =>{
 
 // 2sd parameter of Fetch
 
-const requestJoke = async(firstName,lastName)=>{
-    const response = await fetch(`https://api.icndb.com/jokes/random?
-    firstName = ${firstName}&lastName=${lastName}`);
-    const jokeRespons =await response.json();
-    console.log(jokeRespons.value.joke);
+
+// abstract from a form 
+const getData =()=>{
+    const requestJoke = {
+        firstName:"youssef"
+        ,lastName :"Saad",
+        categories : ["nerdy"]
+    }
+    return requestJoke;
+}
+const buildRequsetUrl = (Data)=>{
+    return `https://api.icndb.com/jokes/random?
+    firstName = ${Data.firstName}&lastName=${Data.lastName}&limitTo= ${Data.categories}` 
 }
 
-requestJoke("youssef","Saad");
+const requestJoke = async(Url)=>{
+    const response = await fetch(Url);
+    const jokeRespons =await response.json();
+    const joke = jokeRespons.value.joke;
+    postToPage(joke);
+}
+const postToPage =(joke)=>{
+    console.log(joke)
+}
+const processJokeRequset=async ()=>{
+    const requestData = getData();
+    const requestUrl = buildRequsetUrl(requestData);
+    await requestJoke(requestUrl);
+    console.log("finished!")
+}
+processJokeRequset();

@@ -16,7 +16,7 @@ var Father = {
     age: 60,
     gender: "man",
     walks: function () {
-        return "walk on four feet";
+        return "walk on tow feet";
     },
     eat: function () {
         return "eat by hands ";

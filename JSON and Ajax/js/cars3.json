@@ -1,0 +1,21 @@
+[
+    {
+        "name":"Hardi",
+        "model":"Hyundai",
+        "type":{
+            "four":["Accent","Atos"],
+            "salon":["Avanti","Azara"]
+        },
+        "year":"2019"
+    },
+    {
+        "name":"Chevy",
+        "model":"Chevrolet",
+        "type":{
+            "four":["Tahoe","Captiva"],
+            "salon":["Camaro","Malibu"]
+        },
+        "year":"2021"
+    }
+
+]

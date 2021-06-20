@@ -1,0 +1,21 @@
+[
+    {
+        "name":"Marvi",
+        "model":"Maserati",
+        "type":{
+            "four":["Ghibli","Levante"],
+            "salon":["Spyder","Mc12"]
+        },
+        "year":"2019"
+    },
+    {
+        "name":"Lati",
+        "model":"Lotus",
+        "type":{
+            "four":["Elan","Elise"],
+            "salon":["Esprit","Evora"]
+        },
+        "year":"2015"
+    }
+
+]

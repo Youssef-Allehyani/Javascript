@@ -24,8 +24,22 @@ button.addEventListener("click",function(){
 
 let TheEvent = (Data,number)=>{
     let DataObjact = [];
+    let FourCars = "";
+    let salonCars = "";
+    for(let i =0 ; i < Data[number].type.four.length;i++){
+        if(i==0){
+            FourCars+=Data[number].type.four[i];
+            salonCars+=Data[number].type.salon[i];
+        }else{
+            FourCars+=" and "+Data[number].type.four[i]+".";
+            salonCars+=" and "+Data[number].type.salon[i]+".";
+        }
+        
+    }
     for(let i =0 ; i<Data.length;i++){
-        DataObjact.push ("<p>"+Data[i].name+"is a "+Data[i].model+"<hr></p>");
+        DataObjact.push("<p>"+Data[i].name+"is a "+Data[i].model+
+        "<br> That has 4x4 like: "+FourCars+"<br> The Salon like: "+salonCars+"<br> year modal:  "+Data[i].year+"<hr></p>");
     };
+    
     info.insertAdjacentHTML("beforeend",DataObjact[number]);
 };
